@@ -93,20 +93,24 @@ Return the resulting output array.
 const fizzbuzz = (arr) => {
   // Solution code here...
   let out = [];
-  for (let i = 0; i < arr.length; i++){
-    if (out[i] % 3 === 0 && arr[i] % 5 === 0){
-      arr.push('Fizz Buzz');
+  arr.forEach((value) => {
+    if (value % 3 === 0 && value % 5 === 0){
+      out.push('Fizz Buzz');
     }
-    else if (out[i] % 3 === 0){
-      arr.push('Fizz');
+    else if (value % 3 === 0){
+      out.push('Fizz');
     }
-    else if(out[i] % 5 === 0){
-      arr.push('Buzz');
+    else if(value % 5 === 0){
+      out.push('Buzz');
     }
-    else 
-  }
+    else {
+      out.push(value);
+    }
+  });
   return out;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
