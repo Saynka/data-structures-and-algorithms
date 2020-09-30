@@ -21,8 +21,6 @@ const raisedToTheThird = (arr) => {
   return output;
 
 };
-=======
-}
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,8 +35,6 @@ const appendTheEnd = (str) => {
 
   let output = str;
   return `${str} The end.`;
-=======
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,7 +54,6 @@ const appendFirstToLast = (arr) => {
   // Solution code here...
 
   arr.push(arr[0]);
-=======
 
 };
 
@@ -82,8 +77,6 @@ const addBirthYearProperty = (obj, year) => {
 
   obj.yearBorn = year;
 
-=======
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -101,14 +94,6 @@ console.log(people[1].isAuthor) prints true
 
 const setStatusAsAuthor = (people) => {
   // Solution code here...
-
-  ;
-  
-  
-
-
-
-=======
 
 };
 
