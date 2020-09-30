@@ -10,6 +10,7 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
+
   let output = [];
   // for (let i = 0; i < arr.length; i++) {
   // arr.push(Math.pow(arr[i], 3));
@@ -20,6 +21,9 @@ const raisedToTheThird = (arr) => {
   return output;
 
 };
+=======
+}
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -30,8 +34,11 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 const appendTheEnd = (str) => {
   // Solution code here...
+
   let output = str;
   return `${str} The end.`;
+=======
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -49,7 +56,10 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
+
   arr.push(arr[0]);
+=======
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,7 +79,10 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+
   obj.yearBorn = year;
+
+=======
 
 };
 
@@ -88,11 +101,14 @@ console.log(people[1].isAuthor) prints true
 
 const setStatusAsAuthor = (people) => {
   // Solution code here...
+
   ;
   
   
 
 
+
+=======
 
 };
 
