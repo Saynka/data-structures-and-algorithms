@@ -42,6 +42,9 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
+  let regex = /\d/;
+  return regex.test(input);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -54,6 +57,14 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  let regex = /[A-Z]\w+/g;
+  if(regex.test(str)){
+    console.log(str.match(regex));
+    return str.match(regex);
+  } else {
+    return [];
+  }
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,6 +75,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  let arr2 = [];
+  let regex = /^[A-J]/;
+  arr.forEach((value) => {
+    if (regex.test(value)) {
+      arr2.push(value);
+    }
+  })
+  return arr2;
 };
 
 /* ------------------------------------------------------------------------------------------------
