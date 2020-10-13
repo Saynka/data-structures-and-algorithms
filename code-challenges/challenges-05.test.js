@@ -38,11 +38,14 @@ let $ = createSnippetWithJQuery(`
 
 const templateWithJQuery = () => {
   // Solution code here...
-  let myTemplate = $('#template').html();
-  starWarsPeople.forEach(value =>{
+  let template = $('#template').html();
+  starWarsPeople.forEach(value => {
     let html = $(`<section>${template}</section>`);
+    html.find('h2').text(value.name);
+    html.find('h3').text(value.height);
+    html.find('p').text(value.eye_color);
     $('main').append(html);
-});
+  });
 };
 
 
@@ -81,6 +84,12 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 
 const wordsToCharList = (arr) => {
   // Solution code here...
+  let results = [];
+  for (let i = 0; i < arr.length; i++) {
+    let slice = arr.charAt(i);
+    results.push(slice);
+  }
+  return results;
 };
 
 
@@ -128,6 +137,11 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  recipe.ingredients.forEach(item => {
+    let slice1 = item.slice(item.indexOf(' ') +1);
+    let slice2 = slice1.slice(slice1.indexOf(' ') +1);
+    result.push(slice2);
+  });
   return result;
 };
 
@@ -142,8 +156,13 @@ You may also use other string or array methods.
 const splitFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  for (let i = 0; i < recipe.length; i++) {
+    let split = recipe.split(i);
+    result.push(split);
+  }
   return result;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
@@ -350,6 +369,6 @@ xdescribe('Testing challenge 11', () => {
 });
 
 
-function createSnippetWithJQuery(html){
+function createSnippetWithJQuery(html) {
   return cheerio.load(html);
 };
