@@ -71,7 +71,14 @@ let $ = createSnippetWithJQuery(`
 
 const templatingWithMustache = () => {
   // Solution code here...
-  
+  let arr = [];
+  let template = $('#template').html();
+  characters.forEach(place => {
+    let html = Mustache.render(template, place);
+    arr.push(html);
+  });
+
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -81,13 +88,17 @@ Write a function named getCourseKeys that takes in the courseInfo object and ret
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
-const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
+const courseInfo = {
+  name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks' },
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true
 };
 
 const getCourseKeys = (obj) => {
   // Solution code here...
+  return Object.keys(obj);
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -99,7 +110,11 @@ Write a function named getHouses that returns a new array containing the names o
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  characters.forEach(val => {
+    houses.push(val.house);
+  });
   return houses;
+
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -116,8 +131,14 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-
+  let result = false;
+  const values = Object.values(arr);
+  values.forEach(current => {
+    if(current.name === character && current.children) result = true;
+  });
+  return result;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
@@ -253,6 +274,6 @@ xdescribe('Testing challenge 8', () => {
 });
 
 
-function createSnippetWithJQuery(html){
+function createSnippetWithJQuery(html) {
   return cheerio.load(html);
 }
