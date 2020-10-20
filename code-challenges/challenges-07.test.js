@@ -2,6 +2,7 @@
 
 // to learn more about the cheerio library and what it is doing, look at their documentation: https://www.npmjs.com/package/cheerio
 const cheerio = require('cheerio');
+place holder for tomorrow 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
@@ -36,6 +37,7 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
 };
+placeee holdeererr 
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
