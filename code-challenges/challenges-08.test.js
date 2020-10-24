@@ -21,10 +21,11 @@ const createServer = () => {
 };
 
 
-function sayHello(request, response){
+function sayHello(req, res){
   // Solution code here...
+  res.send('Hello from the back-end');
 }
-place holder 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -35,8 +36,9 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
   // Solution code here...
+  return arr.filter(num => num % 2 !== 0);
 };
-place holder
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -50,6 +52,8 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 const filterStringsWithVowels = (arr) => {
   // Solution code here...
+  let arry = arr.filter(value => (/[aeiou]/).test(value));
+  return arry;
 };
 
 
@@ -63,6 +67,10 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  let arry = arr.filter(val => {
+    return !forbiddenValues.includes(val);
+  });
+  return arry;
 };
 
 /* ------------------------------------------------------------------------------------------------
