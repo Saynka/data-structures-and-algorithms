@@ -8,6 +8,27 @@ Build a simple express server. Connect a '/hello' route that sends a greeting of
 
 const createServer = () => {
   // Solution code here...
+  const express = require('express');
+  const app = express();
+
+  app.get('/hello', (req, res) => {
+    let hell = 'hello';
+    res.status(200).send(hell);
+  });
+
+  app.get('/aboutme', (req, res) => {
+    let about = 'not gonna lie coding is pretty dope';
+    res.status(200).send(about);
+  });
+
+  app.get('/favoritefoods', (req, res) => {
+    let foody = 'my favorite food is sushi! and also salmon';
+    res.status(200).send(foody);
+  });
+
+  app.get('*', (req, res) => {
+    res.status(404).send('Something went wrong!');
+  });
 
   var server = app.listen(3301, function () {
     var port = server.address().port;
@@ -28,6 +49,16 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
+  let n = 0;
+  input.filter( val => {
+    val.filter( val2 => {
+      if (target === val2) {
+        n++;
+      }
+    });
+  });
+  return n;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -42,6 +73,8 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 const totalSum = (input) => {
   // Solution code here...
+  let arry = input.reduce((acc, val) => acc + val.reduce((acc2, val2) => acc2 + val2, 0), 0);
+  return arry;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,6 +91,11 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  return input.map(val => {
+    let arry = val.filter(val2 => typeof(val2) ==='number' && val2 % 5 === 0);
+    let arr = arry.map(val2 => Math.pow(2, val2));
+    return arr;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
