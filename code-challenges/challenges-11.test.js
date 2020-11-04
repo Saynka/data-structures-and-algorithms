@@ -50,8 +50,8 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 
 const validateEmail = (email) => {
   // Solution code here...
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+  let regex = /^\w+.\w+@\w+.?(com|net|org)$/;
+  return regex.test(email);
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -76,17 +76,9 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
-  var phoneno = /^\d{10}$/;
-  if((inputtxt.value.match(phoneno))
-        {
-      return true;
-        }
-      else
-        {
-        alert("message");
-        return false;
-        }
-  return phoneNumber
+  let regex = /(^\(\d{3}\)|(^\d{3}))[ -]?\d{3}[ -]?\d{4}$/g;
+  return regex.test(phoneNumber);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
