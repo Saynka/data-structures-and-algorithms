@@ -14,6 +14,14 @@ const createServer = () => {
 
   // solution code goes here ...
 
+  app.get('/', (request, response) => {
+    response.send(200);
+  })
+
+  app.delete('/things/1', (request, response) => {
+    response.send(405);
+  })
+
   var server = app.listen(3000, function () {
     var port = server.address().port;
     console.log('Example app listening at port', port);
@@ -29,9 +37,8 @@ Write a function named toTitleCase that takes in an array of strings and returns
 For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyver'].
 ------------------------------------------------------------------------------------------------ */
 
-const toTitleCase = (arr) => {
-  // Solution code here...
-};
+const toTitleCase = (arr) => arr.map(a => a.charAt(0).toUpperCase() + a.substr(1));
+// Solution code here...
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -106,6 +113,8 @@ let starWarsData = [{
 
 let biggerThanLuke = (arr) => {
   // Solution code here...
+  return arr.filter(figure => figure.mass > 77)
+    .map(figure => figure.name).join(" - ");
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -124,6 +133,17 @@ This data could be sorted by name or price.
 
 const sortBy = (property, arr) => {
   // Solution code here...
+  return arr.sort((a, b) => {
+    if (a[property] > b[property]) {
+      return 1;
+
+    } if (a[property] < b[property]) {
+      return -1;
+
+    } else if (a[property] === b[property]) {
+      return 0;
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
