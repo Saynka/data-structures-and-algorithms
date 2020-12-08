@@ -1,5 +1,30 @@
 # Data Structures and Algorithms
 
+## Table of Contents
+
+### Python
+
+* [array_reverse](../python/challenges/array_reverse/README.md)
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+
+
+
 ## Create a copy of this repository
 
 1. Create a new repository in your GitHub account called `data-structures-and-algorithms`
