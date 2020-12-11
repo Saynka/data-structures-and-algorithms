@@ -5,7 +5,7 @@
 ### Python
 
 * [array_reverse](../python/challenges/array_reverse/README.md)
-* []()
+* [array_shift](../python/challenges/array_shift/README.md)
 * []()
 * []()
 * []()
