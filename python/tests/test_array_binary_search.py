@@ -5,17 +5,15 @@ def test_version():
     assert __version__ == '0.1.0'
 
 arry = [ 2, 3, 4, 15, 16, 23, 42, 55, 66, 77, 80]
-high >= 23
-# mid = (high + low) // 2
 x = 55
 
 def test_one():
-    actual = BinarySearch(arry, high, x)
+    actual = BinarySearch(arry, x)
     expected = 2
     assert actual == expected
 
 def test_two():
-    actual = BinarySearch(arry, high, x)
+    actual = BinarySearch(arry, x)
     expected = -1
     assert actual == expected
 
