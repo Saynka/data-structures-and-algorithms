@@ -6,9 +6,10 @@
 
 #### Pre-work
 
-* [301- code challenges](code-challenges)
+* [301-Code Challenges](code-challenges)
 
 ### Course-work
+
 * [](../javascript/code_challenges//README.md)
 
 ### Python 
