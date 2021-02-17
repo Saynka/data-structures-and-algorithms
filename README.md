@@ -8,7 +8,7 @@
 
 * [301-Code Challenges](code-challenges)
 
-### Course-work
+#### Main-Course
 
 * [](../javascript/code_challenges//README.md)
 
