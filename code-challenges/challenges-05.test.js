@@ -157,8 +157,8 @@ const splitFoods = (recipe) => {
   let result = [];
   // Solution code here...
   for (let i = 0; i < recipe.length; i++) {
-    let split = recipe.split(i);
-    result.push(split);
+    let spli = recipe.split(i);
+    result.push(spli);
   }
   return result;
 };
@@ -177,7 +177,11 @@ Return a new array containing just the verbs. For example, ['Mix until evenly di
 const stepActions = (recipe) => {
   let result = [];
   // Solution code here...
-  return result;
+  for (let i = 0; i < arr.length; i++) {
+    let goal = recipe.chartAt(i);
+    results.delete(goal [0]);
+}
+    return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -195,6 +199,15 @@ For example:
 
 const removeEvenValues = (arr) => {
   // Solution code here...
+  const intiger = []
+  for (let i = 0; i < arr.length; i++) {
+    let gone = arr.charAt(i)
+    if (integer % 2 === 0);
+    removeEvenValues(i);
+    intiger.push(gone)
+    
+  }
+  return intiger;
 };
 
 /* ------------------------------------------------------------------------------------------------

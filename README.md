@@ -2,11 +2,22 @@
 
 ## Table of Contents
 
+### JavaScript
+
+#### Pre-work
+
+* [301- code challenges](code-challenges)
+
+### Course-work
+* [](../javascript/code_challenges//README.md)
+
 ### Python 
 
 * [array_reverse](../python/code_challenges/array_reverse/README.md)
 * [array_shift](../python/code_challenges/array_shift/README.md)
 * [array_binary_search](../python/code_challenges/array_binary_search/README.md)
+<!-- * [](../python/code_challenges//README.md) -->
+<!-- * [](../python/code_challenges//README.md)
 * [](../python/code_challenges//README.md)
 * [](../python/code_challenges//README.md)
 * [](../python/code_challenges//README.md)
@@ -19,9 +30,7 @@
 * [](../python/code_challenges//README.md)
 * [](../python/code_challenges//README.md)
 * [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
+* [](../python/code_challenges//README.md) -->
 
 
 
