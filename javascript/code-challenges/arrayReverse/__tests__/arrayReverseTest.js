@@ -1,8 +1,6 @@
 'use strict';
 
-'use strict';
-
-const reverse = require('../array-reverse.js');
+const reverse = require('./array-reverse.js');
 
 describe('Array Rerverse', () => {
 
