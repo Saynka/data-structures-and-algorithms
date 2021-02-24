@@ -5,10 +5,10 @@ const shift = require('../array-shift.js');
 describe('Array Shift', () => {
 
   it('should add a new value to array', () => {
-    let myArray = ([2,4,6,8], 5);
+    let myArray = [2,4,6,8];
     let expected = [2,4,5,6,8];
-    shift(myArray);
-    expect(myArray).toEqual(expected);
+    let newArray = shift(myArray, 5);
+    expect(newArray).toEqual(expected);
   });
 
 });
