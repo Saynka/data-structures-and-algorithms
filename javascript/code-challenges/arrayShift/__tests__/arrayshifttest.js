@@ -1,6 +1,6 @@
 'use strict';
 
-const reverse = require('./array-shift.js');
+const shift = require('../array-shift.js');
 
 describe('Array Shift', () => {
 
