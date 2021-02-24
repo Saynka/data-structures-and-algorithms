@@ -1,11 +1,25 @@
 'use strict';
 
-let a = [2,4,6,8];
-let b = [4,8,15,23,42];
-let c = 5
+let arry = [1,2,3,4]
+let position = 5;
 
-const shift = (a, b) => { 
-    return a[a.length / 2] + [b] + a[a.length /2]
+function garbage (arry, position){
+  let half = Math.ceil(arry.length / 2);
+  let array = [];
+  console.log(arry)
+  for(let i = 0; i < arry.length; i++){
+    console.log(i, half);
+    if (i < half) {
+      array.push(arry[i])
+  } else if (i === half) {
+    array.push(position);
+  } else if ( i > half) {
+    array.push(arry[i]);
+  }
 }
+  // console.log(half);
+};
 
-module.exports = shift;
+garbage(arry, position);
+
+module.exports = garbage;
