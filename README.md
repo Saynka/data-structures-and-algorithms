@@ -10,7 +10,9 @@
 
 #### Main-Course
 
-* [array_reverse](../javascript/code_challenges//README.md)
+* [array_reverse](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)
+* [array_shift](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayShift)
+* [array_binary_search](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayBinarySearch)
 
 
 ### Python 
