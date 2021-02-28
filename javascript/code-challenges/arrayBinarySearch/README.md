@@ -11,3 +11,6 @@ was to divide the array and search for the key till we find the key we are looki
 
 ## Solution
 ![White board](../../../assets/array_binary_search.png)
+
+## Code challenge partner white board
+![White board](../../../assets/cc3partner.png)
