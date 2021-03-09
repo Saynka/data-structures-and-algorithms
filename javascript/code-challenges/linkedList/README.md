@@ -1,13 +1,12 @@
 # Linked List
 
-# 
-creating a function that takes in a string of numbers and returns then in reverse order
 
 ## Challenge
-to change the output of a string to reverse the order in the event you need to see a count down or wanted things said from last to first, display least liked iteams to most like.
+Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
 
 ## Approach & Efficiency
-the approach i took to this was a straight forword one take this and reverse it
+create a class that scycles threw a list and gives the next value to the next line of code
 
 ## Solution
-![White board](../../../assets/array-reverse.png)
+![White board](../../../assets/ll.jpg)
+![data-structor](../../../assets/ll2.jpg))

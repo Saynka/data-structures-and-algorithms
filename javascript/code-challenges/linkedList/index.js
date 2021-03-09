@@ -1,19 +1,21 @@
 'use strict';
 
-const Linked = require('./link/linked-list.js');
+const LinkedUp = require('./link/linked-list.js');
 
-let LinkedList = new Linked();
+let linkedList = new LinkedUp();
 
-LinkedList.append('1');
-LinkedList.append('2');
-LinkedList.append('3');
-LinkedList.append('4');
-LinkedList.append('5');
-LinkedList.append('6');
-LinkedList.append('7');
-LinkedList.append('8');
-LinkedList.append('9');
-LinkedList.append('10');
-LinkedList.append();
+linkedList.insert('1');
+linkedList.insertFirst('100');
+linkedList.insertAt('dogs');
+linkedList.append('4');
+linkedList.append('5');
+linkedList.append('6');
+linkedList.append('7');
+linkedList.append('8');
+linkedList.append('9');
+linkedList.append('10');
+linkedList.append(null);
 
-console.log(LinkedList);
+console.log(linkedList);
+
+// module.exports = linkedList;
