@@ -11,8 +11,26 @@ class LinkedUp {
     this.size = 0;
   }
 
+
+  // Empty list
+  isEmpty() {
+    if (this.head === null) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  // Insert first node
+  insertFirst(value) {
+    this.head = new Node(value, this.head);
+    this.size++;
+  }
+
+
   append(value) {
     let node = new Node(value);
+    this.size++;
 
     if (!this.head) {
       this.head = node;
@@ -25,65 +43,102 @@ class LinkedUp {
 
       current.next = node;
     }
-
-    return this;
   }
 
-
-  insertFirst(data) {
-    this.head = new Node(data, this.head);
-    this.size++;
-
+  includes(value) {
     if (!this.head) {
-      this.head = data;
-    } else {
-      let current = this.head;
+      return false;
+    }
+    let current = this.head;
+    while (current) {
+      if (current.value === value) {
+        return true;
+      }
+      current = current.next;
+    }
+    return false;
+  }
 
-      while (current.next) {
+  toString() {
+  }
+
+  removeAt(index) {
+    if (index > 0 && index > this.size) {
+      return;
+    }
+
+    let current = this.head;
+    let previous;
+    let count = 0;
+
+    if (index === 0) {
+      this.head = current.next;
+    } else {
+      while (count < index) {
+        count++;
+        previous = current;
         current = current.next;
       }
 
-      current.next = data;
+      previous.next = current.next;
     }
-    return this;
+
+    this.size--;
   }
 
-  insertAt(data, index) {
+  insertAt(value, index) {
     if (index > 0 && index > this.size) {
       return;
     }
     if (index === 0) {
-      this.head = new Node(data, this.head);
+      this.insertFirst(value);
       return;
-    } else {
-      let current = this.head;
-
-      while (current.next) {
-        current = current.next;
-      }
-
-      current.next = data;
     }
-    return this;
+    const node = new Node(value);
+    let current, previous;
+
+    // Set current to first
+    current = this.head;
+    let count = 0;
+
+    while (count < index) {
+      previous = current;
+      count++;
+      current = current.next;
+    }
+
+    node.next = current;
+    previous.next = node;
+
+    this.size++;
   }
 
-  insertLast(data) {
-    let node = new Node(data);
+
+  insertLast(value) {
+    let node = new Node(value);
+    let current;
     if (!this.head) {
       this.head = node;
     } else {
-      let current = this.head;
+      current = this.head;
 
       while (current.next) {
         current = current.next;
       }
 
-      current.next = data;
+      current.next = node;
     }
-    return this;
+    this.size++;
   }
 
-  insert 
+  printListData() {
+    let current = this.head;
+
+    while (current) {
+      console.log(current.value);
+      current = current.next;
+    }
+  }
 }
 
 
