@@ -2,11 +2,13 @@
 
 const LL = require('../link/linked-list.js');
 
+
 describe('LINKED LIST', () => {
   it('should create an empty list on instantiation', () => {
     let list = new LL();
     expect(list.head).toEqual(null);
-  })
+    console.log(list);
+  });
 
   it('should add items to the list', () => {
     let list = new LL();
@@ -17,12 +19,25 @@ describe('LINKED LIST', () => {
     expect(list.head.value).toEqual(first); // check that the item was added with our val
 
     list.append(second); // hint: check the next property in this test
+    expect(list.head.next.value).toEqual(second);
 
     // 3 and 4 are just to log data, no need to test that far
     // list.append(3);
     // list.append(4);
     console.log(list);
-  })
+  });
+
+  it('should return true if searched value is in linked list', () => {
+    let list = new LL();
+    expect(list.includes('first')).toBeFalsy();
+    list.append('first');
+    list.append('second');
+    expect(list.includes('first')).toBeTruthy();
+    expect(list.includes('second')).toBeTruthy();
+    expect(list.includes('third')).toBeFalsy();
+    console.log(list);
+  });
+
 
   it('should insert first', () => {
     let inserty = new LL();
@@ -35,7 +50,7 @@ describe('LINKED LIST', () => {
     inserty.append(consertys);
 
     console.log(inserty);
-  })
+  });
 
   it('should insert at', () => {
     let att = new LL();
@@ -49,5 +64,5 @@ describe('LINKED LIST', () => {
 
     console.log(att);
 
-  })
-})
+  });
+});
