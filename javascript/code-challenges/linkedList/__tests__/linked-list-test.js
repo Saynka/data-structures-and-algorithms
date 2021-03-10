@@ -32,10 +32,10 @@ describe('LINKED LIST', () => {
     expect(list.includes('first')).toBeFalsy();
     list.append('first');
     list.append('second');
+    console.log(list.includes('first'));
     expect(list.includes('first')).toBeTruthy();
     expect(list.includes('second')).toBeTruthy();
     expect(list.includes('third')).toBeFalsy();
-    console.log(list);
   });
 
 
@@ -44,11 +44,11 @@ describe('LINKED LIST', () => {
     let insertys = '100';
     let consertys = '200';
 
-    inserty.append(insertys);
+    inserty.insertFirst(insertys);
     expect(inserty.head.value).toEqual(insertys);
 
-    inserty.append(consertys);
-
+    inserty.insertFirst(consertys);
+    expect(inserty.head.value).toEqual(consertys);
     console.log(inserty);
   });
 
@@ -56,13 +56,26 @@ describe('LINKED LIST', () => {
     let att = new LL();
     let atty = 'dog';
     let attys = 'cats';
+    let addys = 'bird';
 
     att.append(atty);
     expect(att.head.value).toEqual(atty);
 
     att.append(attys);
+    att.insertAt(addys, 1);
+    expect(att.head.next.value).toEqual(addys);
 
     console.log(att);
 
+  });
+  it('should turn shit to string', () => {
+    let string = new LL();
+    let strings = 'this';
+    let stringys = 'that';
+
+    string.append(strings);
+    string.append(stringys);
+    expect(string.toString()).toEqual('{this} -> {that} -> {Null}');
+    console.log(string.toString());
   });
 });

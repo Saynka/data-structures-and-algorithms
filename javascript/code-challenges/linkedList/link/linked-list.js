@@ -1,6 +1,6 @@
 'use strict';
 
-// const { linkedList } = require('../index.js');
+// const { LinkedList } = require('../index.js');
 // pull in the Node Class -> this will give us the ability
 // to instantiate (add) new nodes to our linked list
 const Node = require('./node.js');
@@ -23,7 +23,9 @@ class LinkedUp {
 
   // Insert first node
   insertFirst(value) {
+    let nodes = this.head;
     this.head = new Node(value, this.head);
+    this.head.next = nodes;
     this.size++;
   }
 
@@ -60,6 +62,16 @@ class LinkedUp {
   }
 
   toString() {
+    let string = '';
+    let current = this.head;
+    if (!current) {
+      return 'NULL';
+    }
+    while (current) {
+      string += `{${current.value}} -> `;
+      current = current.next;
+    }
+    return string += `{Null}`;
   }
 
   removeAt(index) {

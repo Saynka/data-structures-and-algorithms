@@ -1,17 +1,18 @@
 'use strict';
 
-const LinkedUp = require('./link/linked-list.js');
+const LinkedList = require('./link/linked-list.js');
 
-let ll = new LinkedUp();
+let ll = new LinkedList();
 
 ll.append('first');
 ll.append('second');
 ll.includes('first');
-ll.isEmpty('');
+ll.insertFirst('first');
+ll.insertLast('second')
 ll.insertAt('254', 3);
 ll.append('dogs');
 
 
 console.log(ll);
 
-// module.exports = ll;
+module.exports = LinkedList;
