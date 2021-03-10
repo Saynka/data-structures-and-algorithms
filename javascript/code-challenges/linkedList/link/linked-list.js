@@ -12,7 +12,7 @@ class LinkedUp {
   }
 
 
-  // TODO:
+
   isEmpty() {
     if (this.head === null) {
       return true;
@@ -72,7 +72,7 @@ class LinkedUp {
     }
     return string += `{Null}`;
   }
-  // TODO:
+
   removeAt(index) {
     if (index > 0 && index > this.size) {
       return;
@@ -91,7 +91,7 @@ class LinkedUp {
         current = current.next;
       }
 
-      previous.next = current.next;
+      // previous.next = current.next;
     }
 
     this.size--;

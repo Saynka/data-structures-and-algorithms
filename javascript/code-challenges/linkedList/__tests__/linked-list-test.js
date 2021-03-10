@@ -67,6 +67,22 @@ describe('LINKED LIST', () => {
     console.log(att);
 
   });
+  //////// removeAt Done 
+  it('should delete at', () => {
+    let att = new LL();
+    let atty = 'dog';
+    let attys = 'cats';
+
+    att.append(atty);
+    expect(att.head.value).toEqual(atty);
+
+    att.append(attys);
+    att.removeAt(attys, 1);
+    expect(att.head.next.value).toEqual(attys);
+
+    console.log(att);
+
+  });
 
   ////////toString Done
   it('should turn shit to string', () => {
@@ -79,4 +95,15 @@ describe('LINKED LIST', () => {
     expect(string.toString()).toEqual('{this} -> {that} -> {Null}');
     console.log(string.toString());
   });
+
+  ////// isEmpty Done
+  it('should check if empty', () => {
+    let empty = new LL();
+
+    empty.append(empty);
+    expect(empty.head.value).toEqual(empty);
+
+    console.log(empty);
+  });
+
 });
