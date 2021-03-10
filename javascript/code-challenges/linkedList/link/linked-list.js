@@ -12,7 +12,7 @@ class LinkedUp {
   }
 
 
-  // Empty list
+  // TODO:
   isEmpty() {
     if (this.head === null) {
       return true;
@@ -21,7 +21,6 @@ class LinkedUp {
     }
   }
 
-  // Insert first node
   insertFirst(value) {
     let nodes = this.head;
     this.head = new Node(value, this.head);
@@ -73,7 +72,7 @@ class LinkedUp {
     }
     return string += `{Null}`;
   }
-
+  // TODO:
   removeAt(index) {
     if (index > 0 && index > this.size) {
       return;
@@ -125,7 +124,7 @@ class LinkedUp {
     this.size++;
   }
 
-
+  //TODO:
   insertLast(value) {
     let node = new Node(value);
     let current;
