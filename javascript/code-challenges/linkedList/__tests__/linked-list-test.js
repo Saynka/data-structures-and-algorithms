@@ -10,23 +10,21 @@ describe('LINKED LIST', () => {
     console.log(list);
   });
 
+  ////////append done
   it('should add items to the list', () => {
     let list = new LL();
     let first = 'first';
     let second = 'second';
 
-    list.append(first); // add an item to the list
-    expect(list.head.value).toEqual(first); // check that the item was added with our val
+    list.append(first);
+    expect(list.head.value).toEqual(first);
 
-    list.append(second); // hint: check the next property in this test
+    list.append(second);
     expect(list.head.next.value).toEqual(second);
-
-    // 3 and 4 are just to log data, no need to test that far
-    // list.append(3);
-    // list.append(4);
     console.log(list);
   });
 
+  ////////includes done
   it('should return true if searched value is in linked list', () => {
     let list = new LL();
     expect(list.includes('first')).toBeFalsy();
@@ -38,7 +36,7 @@ describe('LINKED LIST', () => {
     expect(list.includes('third')).toBeFalsy();
   });
 
-
+  /////////insertFirst done
   it('should insert first', () => {
     let inserty = new LL();
     let insertys = '100';
@@ -52,6 +50,7 @@ describe('LINKED LIST', () => {
     console.log(inserty);
   });
 
+  //////////insertAt done
   it('should insert at', () => {
     let att = new LL();
     let atty = 'dog';
@@ -68,6 +67,8 @@ describe('LINKED LIST', () => {
     console.log(att);
 
   });
+
+  ////////toString Done
   it('should turn shit to string', () => {
     let string = new LL();
     let strings = 'this';
