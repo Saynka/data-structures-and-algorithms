@@ -6,37 +6,36 @@
 
 #### Pre-work
 
-* [301-Code Challenges](code-challenges)
+- [301-Code Challenges](code-challenges)
 
 #### Main-Course
 
-* [array_reverse](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)
-* [array_shift](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayShift)
-* [array_binary_search](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayBinarySearch)
+- [array_reverse](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayReverse)
+- [array_shift](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayShift)
+- [array_binary_search](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/arrayBinarySearch)
+- [linked_lists_lab5](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/linkedList)
+- [linked_lists_lab6](https://github.com/Saynka/data-structures-and-algorithms/tree/master/javascript/code-challenges/linkedList)
 
+### Python
 
-### Python 
-
-* [array_reverse](../python/code_challenges/array_reverse/README.md)
-* [array_shift](../python/code_challenges/array_shift/README.md)
-* [array_binary_search](../python/code_challenges/array_binary_search/README.md)
-<!-- * [](../python/code_challenges//README.md) -->
-<!-- * [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md)
-* [](../python/code_challenges//README.md) -->
-
-
+- [array_reverse](../python/code_challenges/array_reverse/README.md)
+- [array_shift](../python/code_challenges/array_shift/README.md)
+- [array_binary_search](../python/code_challenges/array_binary_search/README.md)
+  <!-- * [](../python/code_challenges//README.md) -->
+  <!-- * [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md)
+- [](../python/code_challenges//README.md) -->
 
 ## Create a copy of this repository
 
