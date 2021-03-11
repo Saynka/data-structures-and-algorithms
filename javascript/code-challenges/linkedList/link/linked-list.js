@@ -124,7 +124,6 @@ class LinkedUp {
     this.size++;
   }
 
-  //TODO:
   insertLast(value) {
     let node = new Node(value);
     let current;
@@ -150,6 +149,8 @@ class LinkedUp {
       current = current.next;
     }
   }
+
+
 }
 
 

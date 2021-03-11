@@ -36,7 +36,7 @@ describe('LINKED LIST', () => {
     expect(list.includes('third')).toBeFalsy();
   });
 
-  /////////insertFirst done
+  /////////insertBefore done
   it('should insert first', () => {
     let inserty = new LL();
     let insertys = '100';
@@ -47,6 +47,20 @@ describe('LINKED LIST', () => {
 
     inserty.insertFirst(consertys);
     expect(inserty.head.value).toEqual(consertys);
+    console.log(inserty);
+  });
+
+  /////// Insert after
+  it('should insert last', () => {
+    let inserty = new LL();
+    let insertys = '100';
+    let consertys = '200';
+
+    inserty.insertLast(insertys);
+    expect(inserty.head.value).toEqual(insertys);
+
+    inserty.insertLast(consertys);
+    expect(inserty.head.value).toEqual(insertys);
     console.log(inserty);
   });
 
