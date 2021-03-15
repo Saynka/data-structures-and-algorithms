@@ -150,10 +150,26 @@ class LinkedUp {
     }
   }
 
+  kthFromTheEnd(k) {
+    // let node = new Node(value);
+    let current = this.head;
+    let index = 0;
+    while (current) {
+      index = index + 1;
+      current = current.next;
+    } if (k <= 0) {
+      return;
+    }
+    for (let i = 0; i < k - 1; i++) {
+      if (!current) {
+        return;
+      }
+      while (current.next) {
+        return current.value;
+      }
+    }
+  }
 
 }
-
-
-
 
 module.exports = LinkedUp;

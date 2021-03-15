@@ -120,4 +120,24 @@ describe('LINKED LIST', () => {
     console.log(empty);
   });
 
+  ///// Kth from the end done
+  it('should find the kth', () => {
+    let att = new LL();
+    let atty = 'dog';
+    let attys = 'cats';
+    let addys = 'bob';
+    let things = [atty, attys, addys];
+
+    att.append(atty);
+    expect(att.head.value).toEqual(atty);
+
+    att.append(addys);
+    att.kthFromTheEnd(things, 0);
+    expect(att.head.next.value).toEqual(addys);
+
+    console.log(att);
+
+
+  });
+
 });
