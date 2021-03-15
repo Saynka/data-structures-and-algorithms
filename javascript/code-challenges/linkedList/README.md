@@ -10,7 +10,7 @@ create a class that scycles threw a list and gives the next value to the next li
 
 ## Solution
 
+* [kth-FromTheEnd whiteboard](https://docs.google.com/spreadsheets/d/1niE7f04qm9GbqoQ85cVenSUxwJz38DfTm0PLPHLNFMY/edit?usp=sharing)
 ![problem domain](../../../assets/ll3.png)
 ![White board](../../../assets/ll.jpg)
 ![data-structor](../../../assets/ll2.jpg)
-![kth-FromTheEnd](https://docs.google.com/spreadsheets/d/1niE7f04qm9GbqoQ85cVenSUxwJz38DfTm0PLPHLNFMY/edit?usp=sharing)
