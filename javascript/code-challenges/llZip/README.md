@@ -12,4 +12,4 @@ create a new link listed give it a head and set current size 0
 
 ## Solution
 
-![LL-Zip](../../../assets/ll-zip.png)
+![LL-Zip](../../../assets/ll-zip.jpg)
