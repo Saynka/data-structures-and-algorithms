@@ -27,4 +27,4 @@ Utilize the Single-responsibility principle: any methods you write should be cle
 
 ## white board
 
-![stacks and queues](../../../assets/sq1.png)
+![stacks and queues](../../../assets/sq.jpg)
