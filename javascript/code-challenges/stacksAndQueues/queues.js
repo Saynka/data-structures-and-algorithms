@@ -1,7 +1,4 @@
 'use strict';
-
-const Node = require('./node.js');
-
 class Queue {
   constructor() {
     this.front = null;
@@ -40,7 +37,16 @@ class Queue {
 
     return item; // give me back my dequeued item
   }
+
+  isEmpty() {
+    if (this.head === null) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
+
 
 module.exports = Queue;
 
@@ -82,3 +88,4 @@ module.exports = Queue;
 //     return temp.value;
 //   }
 // }
+
