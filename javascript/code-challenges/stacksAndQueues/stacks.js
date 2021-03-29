@@ -1,8 +1,5 @@
 'use strict';
 
-const Node = require('./node.js');
-
-
 class Stack {
   constructor() {
     this.top = null;
@@ -10,7 +7,7 @@ class Stack {
   }
 
   isEmpty() {
-    if (this.head === null) {
+    if (this.top === null) {
       return true;
     } else {
       return false;
