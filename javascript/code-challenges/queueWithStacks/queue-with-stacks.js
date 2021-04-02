@@ -19,7 +19,7 @@ class Queue {
 
   dequeue() {
     while (this.stack1.length > 0) {
-      this.stack2.push(stack1.pop());
+      this.stack2.push(this.stack1.pop());
     }
     return this.stack2.pop();
   }
@@ -28,22 +28,28 @@ class Queue {
     if (this.stack1.length > 0) {
       return this.stack1[0];
     }
-    return this.stack2[this.stack2.length - 1]
+    return this.stack2[this.stack2.length - 1];
   }
 }
 module.exports = Queue;
 
 
+// dequeue() {
+//   while (this.stack1.length > 0) {
+//     this.stack2.push(stack1.pop());
+//   }
+//   return this.stack2.pop();
+// }
 //   enqueue(number) {
 //     this.stack1[this.head] = number;
 //     this.head++;
 //   }
 
-//   dequeue() {
-//     let removed = this.storage[this.head];
-//     delete this.storage[this.head];
-//     this.head++;
-//     return removed;
-//   }
+  // dequeue() {
+  //   let removed = this.storage[this.head];
+  //   delete this.storage[this.head];
+  //   this.head++;
+  //   return removed;
+  // }
 
-// }
+// 

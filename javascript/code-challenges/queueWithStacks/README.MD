@@ -18,4 +18,4 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 
 ## Solution
 
-![Queues and Stacks](../../../assets/l.jpg)
+![Queues and Stacks](../../../assets/queuessta.png)
