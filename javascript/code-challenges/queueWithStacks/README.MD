@@ -18,4 +18,5 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 
 ## Solution
 
+[white board Google docs](https://docs.google.com/spreadsheets/d/1zkfRTSgEr5tOQ1kryOvQByNA3B3DdJjt-6SQ5IbCDBk/edit?usp=sharing)
 ![Queues and Stacks](../../../assets/queuessta.png)
