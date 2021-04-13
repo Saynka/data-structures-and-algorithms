@@ -1,7 +1,5 @@
 # Multi-Bracket-Validation
 
-worked on this with Clement Buchanan
-
 ## Challenge
 
 - On your main file, create…
@@ -19,4 +17,6 @@ Your function should take a string as its only argument, and should return a boo
 
 ## Solution
 
-[White board](https://docs.google.com/spreadsheets/d/1eZn3SfuDaDNs_GlhOQlwv66sE4boWq5Tz__1wBkvrqg/edit?usp=sharing)
+[White board](https://docs.google.com/spreadsheets/d/1aMNXYED-Lo8wBP_O3qaNhKKi9KpB6enF15NqhJPiJS4/edit?usp=sharing)
+
+![visual](../../../assets/bracket.png)
