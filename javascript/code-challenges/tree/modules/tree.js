@@ -94,10 +94,5 @@ class BinaryTree {
 
 }
 
-class BinarySearchTree extends BinaryTree {
-  add(value) {
-    // do all the add logic here
-  }
-}
 
 module.exports = BinaryTree;
