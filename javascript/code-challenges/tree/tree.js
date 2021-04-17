@@ -1,6 +1,6 @@
 'use strict';
 
-const Node = require('./node.js');
+const Node = require('./modules/node.js');
 
 class BinaryTree {
 
@@ -92,7 +92,8 @@ class BinaryTree {
 
   }
 
+
+
 }
 
-
-module.exports = BinaryTree;
+module.exports = { BinaryTree };

@@ -19,6 +19,6 @@
 5. Can successfully return a collection from an inorder traversal
 6. Can successfully return a collection from a postorder traversal
 
-## Solution
+## Solutions
 
 [White board](https://docs.google.com/spreadsheets/d/1eZn3SfuDaDNs_GlhOQlwv66sE4boWq5Tz__1wBkvrqg/edit?usp=sharing)
