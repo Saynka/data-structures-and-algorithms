@@ -8,5 +8,6 @@ class Node {
     this.right = null;
     this.next = null;
   }
+}
 
 module.exports = Node;
