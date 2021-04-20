@@ -35,7 +35,7 @@
 
 ## Solutions
 
-[White board](https://docs.google.com/spreadsheets/d/1eZn3SfuDaDNs_GlhOQlwv66sE4boWq5Tz__1wBkvrqg/edit?usp=sharing)
+![White board](../../../assets/tmv.png)
 
 # Breadth-first traversal
 
@@ -49,4 +49,4 @@
 
 ## Solutions
 
-[White board](https://docs.google.com/spreadsheets/d/1eZn3SfuDaDNs_GlhOQlwv66sE4boWq5Tz__1wBkvrqg/edit?usp=sharing)
+![White board](../../../assets/tbf.jpg)
