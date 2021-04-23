@@ -92,6 +92,21 @@ class BinaryTree {
 
   }
 
+  contains(value) {
+    let current = this.value; {
+      while (current) {
+        if (value === current.value) {
+          return true;
+        }
+        if (value > current.value) {
+          current = current.right;
+        } else {
+          current = current.left;
+        }
+        return false;
+      }
+    }
+  }
 
 
 }
