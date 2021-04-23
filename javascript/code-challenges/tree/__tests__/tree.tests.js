@@ -42,8 +42,11 @@ describe('Tree', () => {
     expect(tree.root.left.value).toEqual(4);
   });
 
-  it('is a tree', () => {
+  it('contains', () => {
     // is tree an "instanceOf" BinarySearchTree
+    const tree = new BinarySearchTree();
+    tree.add(5);
+    expect(tree.contains(5)).toBeFalsy();
   });
 
   it('has a valid root', () => {
