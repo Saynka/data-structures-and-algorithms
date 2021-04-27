@@ -110,4 +110,15 @@ describe('Tree', () => {
     console.log(tree.breadth());
   });
 
+  it('should buzz the fizz', () => {
+    const tree = new BinarySearchTree();
+    tree.add(15);
+    tree.add(3);
+    tree.add(5);
+    tree.add(8);
+    expect(tree.fizzBuzz()).toEqual([15, 3, 5, 8]);
+  });
+
 });
+
+
