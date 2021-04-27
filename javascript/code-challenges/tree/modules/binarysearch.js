@@ -152,7 +152,50 @@ class BinarySearchTree extends BinaryTree {
     }
   }
 
+  fizzBuzz() {
+    if (!this.root) {
+      return 'Empty';
+    }
+
+    let queue = [];
+    let path = [];
+
+    queue.push(this.root);
+
+
+
+    while (queue.length > 0) {
+
+      let currentNode = queue.shift();
+      path.push(currentNode.value);
+
+
+      if (currentNode.value % 15 === 0) {
+        console.log('FizzBuzz');
+
+      } else if (currentNode.value % 3 === 0) {
+        console.log('Fizz');
+
+      } else if (currentNode.value % 5 === 0) {
+        console.log('Buzz');
+
+      } else if (currentNode.value) {
+        console.log(currentNode.value);
+        console.log(path);
+      }
+
+      if (currentNode.left !== null) {
+        queue.push(currentNode.left);
+      }
+
+      if (currentNode.right !== null) {
+        queue.push(currentNode.right);
+      }
+    }
+    return path;
+  }
 }
+
 
 module.exports = { BinarySearchTree };
 
