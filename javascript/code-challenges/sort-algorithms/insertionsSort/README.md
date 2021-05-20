@@ -21,7 +21,7 @@
 
 ## Collaborators Solution
 
-![Insertion Sort](../../../../assets/insertionsort.png)
+![Insertion Sort](../../../../assets/insert.jpg)
 
 ## refrences
 
