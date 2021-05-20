@@ -19,5 +19,4 @@ let current = this.value; {
   }
 }
 }
-
 module.exports = ode;
