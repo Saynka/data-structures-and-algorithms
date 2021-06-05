@@ -6,7 +6,7 @@ function partition(arr, start, end) {
   const pivotValue = arr[end];
   let pivotIndex = start;
   for (let i = start; i < end; i++) {
-    if (arr[i] < pivotValue) {
+    if (arr[i] <= pivotValue) {
       // Swapping elements
       [arr[i], arr[pivotIndex]] = [arr[pivotIndex], arr[i]];
       // Moving to next element
@@ -29,8 +29,8 @@ function quickSortRecursive(arr, start, end) {
   let index = partition(arr, start, end);
 
   // Recursively apply the same logic to the left and right subarrays
-  quickSort(arr, start, index - 1);
-  quickSort(arr, index + 1, end);
+  quickSortIterative(arr, start, index - 1);
+  quickSortIterative(arr, index + 1, end);
 }
 
 function quickSortIterative(arr) {
@@ -69,3 +69,4 @@ function quickSortIterative(arr) {
 
 
 module.exports = { partition, quickSortIterative, quickSortRecursive };
+
