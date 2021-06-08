@@ -73,6 +73,15 @@ class HashMap {
     return false;
 
   }
+
+  find(key) {
+    let hash = this.hash(key);
+    if (this.map[hash]) {
+      return this.map[hash].head;
+    } else {
+      return null;
+    }
+  }
 }
 
 module.exports = HashMap;

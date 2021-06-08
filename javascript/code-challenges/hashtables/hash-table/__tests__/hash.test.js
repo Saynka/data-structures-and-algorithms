@@ -17,6 +17,17 @@ describe('Hashtables', () => {
     expect(people.contains('bob')).toBeTruthy();
   });
 
+  it('should test collision', () => {
+    let people = new HashMap(1024);
+    people.add('bob', 'Student');
+    expect(people.get('john')).toEqual(null);
+  });
 
+  it('should test non-exsiting item', () => {
+    let people = new HashMap(1024);
+    people.add('johns', 'Student');
+    expect(people.get('boby')).toEqual(null);
+  });
 
 });
+
