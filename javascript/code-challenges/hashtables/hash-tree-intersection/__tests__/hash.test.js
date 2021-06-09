@@ -1,14 +1,12 @@
 'use strict';
 
 
-const Node = require('../node.js');
-const { BinaryTree } = require('../tree.js');
 const { BinarySearchTree } = require('../search.js');
 const printCommon = require('../hashTree.js');
 
 describe('Hashtables', () => {
 
-  it('should test the 2 trees ', () => {
+  it('should return common values of 2 trees  ', async () => {
 
     const tree1 = new BinarySearchTree();
     const tree2 = new BinarySearchTree();
@@ -26,8 +24,12 @@ describe('Hashtables', () => {
     tree2.add(1);
 
 
-    printCommon(tree1, tree2);
-    console.log(printCommon(tree1, tree2));
+    const result = await printCommon(tree1.root, tree2.root);
+    expect(result).toContain(7);
+    expect(result).toContain(1);
+    expect(result).toContain(6);
+    expect(result).toContain(4);
+    console.log(result);
 
   });
 
