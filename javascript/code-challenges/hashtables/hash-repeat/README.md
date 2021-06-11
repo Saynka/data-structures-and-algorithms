@@ -13,6 +13,6 @@
 
 ## API
 
-![whiteboard]()
+![whiteboard](../../../../assets/dupword.png)
 
 - https://stackoverflow.com/questions/25644056/how-to-find-the-most-repeat-word-in-string/63988392
