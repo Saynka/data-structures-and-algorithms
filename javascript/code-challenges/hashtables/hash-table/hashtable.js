@@ -82,6 +82,17 @@ class HashMap {
       return null;
     }
   }
+
+  left(left, right) {
+    let keys = left.keys;
+    let join = keys.map(key => {
+      let valArr = [key];
+      valArr.push(left.get(key));
+      valArr.push(right.contains(key) ? right.get(key) : null)
+      return valArr;
+    })
+    return join;
+  }
 }
 
 module.exports = HashMap;
