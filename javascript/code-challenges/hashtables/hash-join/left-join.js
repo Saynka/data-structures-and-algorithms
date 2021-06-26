@@ -84,7 +84,7 @@ class HashMap {
   }
 
   left(left, right) {
-    let keys = left.keys;
+    let keys = left;
     console.log(keys);
     let join = keys.map(key => {
       let arry = [key];
