@@ -24,7 +24,7 @@ describe('graph tests', () => {
     graph.addVertex(e);
     graph.addVertex(f);
     expect(graph.size()).toEqual(6);
-    // graph.print();
+
   });
 
   it('check addEdge of graph', () => {
@@ -67,7 +67,40 @@ describe('graph tests', () => {
     // console.log('build up graph', graph);
   });
 
-  it('check breathfirst', () => {
+  it('check get neighbors of graph', () => {
+
+    const graph = new Graph();
+
+    const a = new Vertex('a');
+    const b = new Vertex('b');
+    const c = new Vertex('c');
+    const d = new Vertex('d');
+
+    graph.addVertex(a);
+    graph.addVertex(b);
+    graph.addVertex(c);
+    graph.addVertex(d);
+    graph.addEdge(a, b);
+    graph.addEdge(b, c);
+    expect(graph.relations()).toBe(2);
+    // console.log('build up graph', graph);
+  });
+
+  it('check size of graph', () => {
+    const graph = new Graph();
+
+    const a = new Vertex('a');
+    const b = new Vertex('b');
+    const c = new Vertex('c');
+    graph.addVertex(a);
+    graph.addVertex(b);
+    graph.addVertex(c);
+    expect(graph.size()).toEqual(3);
+
+  });
+
+
+  it('check breathdfirst', () => {
     const graph = new Graph();
 
     const a = new Vertex('a');
