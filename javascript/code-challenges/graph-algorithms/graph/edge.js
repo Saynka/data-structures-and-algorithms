@@ -1,6 +1,6 @@
 'use strict';
 
-const Vertex = require('./Vertex');
+
 // this is the line between vertexes
 class Edge {
   constructor(vertex, weight) {

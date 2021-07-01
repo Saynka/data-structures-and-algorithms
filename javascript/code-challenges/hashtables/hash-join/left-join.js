@@ -86,9 +86,9 @@ class HashMap {
   left(left, right) {
     let keys = left;
     console.log(keys);
-    let join = keys.map(key => {
+    let join = this.map(key => {
       let arry = [key];
-      arry.push(left.get(key));
+      arry.push(this.left.get(key));
       arry.push(right.contains(key) ? right.get(key) : null);
       return arry;
     });
